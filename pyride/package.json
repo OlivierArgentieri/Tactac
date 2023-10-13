@@ -1,7 +1,7 @@
 {
   "name": "pyride",
   "displayName": "PyRide",
-  "description": "Simple extension to move along python function definitions using alt+arrows shortcut (like pycharm does).",
+  "description": "move along definition using alt+arrows",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.83.0"
