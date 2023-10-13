@@ -3,7 +3,6 @@ import * as vscode from 'vscode';
 
 
 const getRegex = (languageID: string): RegExp | undefined => {
-    console.log(languageID);
     switch (languageID) {
         case 'python':
             return /(def \w+[\(|:])/g;
