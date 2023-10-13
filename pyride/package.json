@@ -16,21 +16,21 @@
   "contributes": {
     "commands": [
       {
-        "command": "vsharm.previousDef",
+        "command": "pyride.previousDef",
         "title": "navigate through previous definitions."
       },
       {
-        "command": "vsharm.nextDef",
+        "command": "pyride.nextDef",
         "title": "navigate through next definitions."
       }
     ],
     "keybindings": [
       {
-        "command": "vsharm.nextDef",
+        "command": "pyride.nextDef",
         "key": "alt+down"
       },
       {
-        "command": "vsharm.previousDef",
+        "command": "pyride.previousDef",
         "key": "alt+up"
       }
     ]

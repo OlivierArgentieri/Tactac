@@ -61,7 +61,7 @@ const revealNewDefinition = (editor: vscode.TextEditor, newDefiniton: vscode.Ran
 }
 
 export function regexNavigation(context: vscode.ExtensionContext) {
-    const previousDefCommand = vscode.commands.registerTextEditorCommand("vsharm.previousDef", async () => {
+    const previousDefCommand = vscode.commands.registerTextEditorCommand("pyride.previousDef", async () => {
 		const editor = vscode.window.activeTextEditor;
 
 		if (!editor) {
@@ -82,7 +82,7 @@ export function regexNavigation(context: vscode.ExtensionContext) {
 		}
 	})
 
-	const nextDefCommand = vscode.commands.registerTextEditorCommand("vsharm.nextDef", async () => {
+	const nextDefCommand = vscode.commands.registerTextEditorCommand("pyride.nextDef", async () => {
 		const editor = vscode.window.activeTextEditor;
 
 		if (!editor) {
