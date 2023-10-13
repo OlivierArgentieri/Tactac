@@ -2,7 +2,9 @@
   "name": "pyride",
   "displayName": "PyRide",
   "description": "move along definition using alt+arrows",
-  "version": "0.0.1",
+  "repository": "https://github.com/OlivierArgentieri/PyRide",
+  "publisher": "OlivierArgentieri",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.83.0"
   },
@@ -13,10 +15,6 @@
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
-      {
-        "command": "pyride.helloWorld",
-        "title": "Hello World"
-      },
       {
         "command": "vsharm.previousDef",
         "title": "navigate through previous definitions."
