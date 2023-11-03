@@ -3,12 +3,12 @@ import * as vscode from 'vscode';
 
 
 const getRegex = (languageID: string): RegExp | undefined => {
-    switch (languageID) {
-        case 'python':
-            return /(def \w+[\(|:])/g;
-        default:
-            return undefined
-    }
+	const dict_regex: {[key: string]: RegExp} = {
+		'python': /(def \w+[\(|:])/g,
+		'markdown': /(#+\S)/g,
+	}
+	
+	return dict_regex[languageID];
 }
 
 // this module he used to navigate to the next and previous definition of a function
