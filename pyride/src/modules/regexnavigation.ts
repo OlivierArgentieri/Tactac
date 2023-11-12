@@ -1,19 +1,16 @@
 
 import * as vscode from 'vscode';
 
-
 const getRegex = (languageID: string): RegExp | undefined => {
 	const dict_regex: {[key: string]: RegExp} = {
 		'python': /(def \w+[\(|:])/g,
-		'markdown': /(#+\S)/g,
+		'markdown': /(#+\s)/g,
 	}
-	
 	return dict_regex[languageID];
 }
 
 // this module he used to navigate to the next and previous definition of a function
 const getNextDefinition = (document: vscode.TextDocument, current_position: vscode.Position): vscode.Range | undefined => {
-
     const regex = getRegex(document.languageId);
     if (!regex) {
         vscode.window.showInformationMessage('Sorry, this language is not supported yet.');
@@ -22,14 +19,13 @@ const getNextDefinition = (document: vscode.TextDocument, current_position: vsco
 
 	for (let line = current_position.line + 1; line < document.lineCount; line++) {
 		const text = document.lineAt(line).text;
-		if (/def \w+[\(|:]/g.test(text)) {
+		if (regex.test(text)) {
 			return new vscode.Range(new vscode.Position(line, 0), new vscode.Position(line, 0));
 		}
 	}
 }
 
 const getPreviousDefinition = (document: vscode.TextDocument, current_position: vscode.Position): vscode.Range | undefined => {
-    
     const regex = getRegex(document.languageId);
     if (!regex) {
         vscode.window.showInformationMessage('Sorry, this language is not supported yet.');
@@ -38,7 +34,7 @@ const getPreviousDefinition = (document: vscode.TextDocument, current_position: 
 
 	for (let line = current_position.line-1; line >= 0; line--) {
 		const text = document.lineAt(line).text;
-		if (/def \w+[\(|:]/g.test(text)) {
+		if (regex.test(text)) {
 			return new vscode.Range(new vscode.Position(line, 0), new vscode.Position(line, 0));
 		}
 	}

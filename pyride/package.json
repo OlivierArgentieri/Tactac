@@ -4,7 +4,7 @@
   "description": "move along definition using alt+arrows",
   "repository": "https://github.com/OlivierArgentieri/PyRide",
   "publisher": "OlivierArgentieri",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.83.0"
   },
@@ -27,11 +27,13 @@
     "keybindings": [
       {
         "command": "pyride.nextDef",
-        "key": "alt+down"
+        "key": "alt+down",
+        "mac": "shift+cmd+down"
       },
       {
         "command": "pyride.previousDef",
-        "key": "alt+up"
+        "key": "alt+up",
+        "mac": "shift+cmd+up"
       }
     ]
   },
