@@ -4,8 +4,8 @@
   "description": "move along definition using alt+arrows",
   "repository": "https://github.com/OlivierArgentieri/PyRide",
   "publisher": "OlivierArgentieri",
-  "version": "0.0.4",
-  "engines": {
+  "version": "0.2.0",
+  "engines": {  
     "vscode": "^1.83.0"
   },
   "categories": [
@@ -17,13 +17,32 @@
     "commands": [
       {
         "command": "pyride.previousDef",
-        "title": "navigate through previous definitions."
+        "title": "previous def"
       },
       {
         "command": "pyride.nextDef",
-        "title": "navigate through next definitions."
+        "title": "next def"
       }
     ],
+    "menus": {
+      "touchBar": [ 
+        {
+          "command": "pyride.previousDef",
+          "group": "pyride1",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "pyride.nextDef",
+          "group": "pyride2",
+          "when": "editorTextFocus" 
+        },
+        {
+          "command": "workbench.action.terminal.focus",
+          "group": "pyride3",
+          "when": "editorTextFocus"
+        }
+      ]
+    },
     "keybindings": [
       {
         "command": "pyride.nextDef",
