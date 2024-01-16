@@ -6,7 +6,7 @@ const getRegex = (languageID: string): RegExp | undefined => {
 		'python': /(def \w+[\(|:])/g,
 		'markdown': /(#+\s)/g,
 		'json': /(".*":)/g,
-		'qml': /(".*":)/g,
+		'qml': /(\w+\s*\{)/g,
 	}
 	return dict_regex[languageID];
 }
