@@ -17,11 +17,11 @@
     "commands": [
       {
         "command": "tactac.previousDef",
-        "title": "previous def"
+          "title": "prev wip"
       },
       {
         "command": "tactac.nextDef",
-        "title": "next def"
+        "title": "next dwip"
       }
     ],
     "menus": {
@@ -34,11 +34,6 @@
         {
           "command": "tactac.nextDef",
           "group": "tactac2",
-          "when": "editorTextFocus" 
-        },
-        {
-          "command": "workbench.action.terminal.focus",
-          "group": "tactac3",
           "when": "editorTextFocus"
         }
       ]
