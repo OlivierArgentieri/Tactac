@@ -5,7 +5,7 @@ const getRegex = (languageID: string): RegExp | undefined => {
 	const dict_regex: {[key: string]: RegExp} = {
 		'python': /((def|class) \w+[\(|:])/g,
 		'markdown': /(#+\s)/g,
-		'json': /(".*":)/g,
+		'json': /([\[|\]|\{|\}])/g,
 		'qml': /(\w+\s*\{)/g,
 	}
 	return dict_regex[languageID];
@@ -59,7 +59,7 @@ const revealNewDefinition = (editor: vscode.TextEditor, newDefiniton: vscode.Ran
 }
 
 export function regexNavigation(context: vscode.ExtensionContext) {
-    const previousDefCommand = vscode.commands.registerTextEditorCommand("pyride.previousDef", async () => {
+    const previousDefCommand = vscode.commands.registerTextEditorCommand("tactac.previousDef", async () => {
 		const editor = vscode.window.activeTextEditor;
 
 		if (!editor) {
@@ -80,7 +80,7 @@ export function regexNavigation(context: vscode.ExtensionContext) {
 		}
 	})
 
-	const nextDefCommand = vscode.commands.registerTextEditorCommand("pyride.nextDef", async () => {
+	const nextDefCommand = vscode.commands.registerTextEditorCommand("tactac.nextDef", async () => {
 		const editor = vscode.window.activeTextEditor;
 
 		if (!editor) {

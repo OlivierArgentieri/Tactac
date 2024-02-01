@@ -1,6 +1,6 @@
 {
-  "name": "pyride",
-  "displayName": "PyRide",
+  "name": "tactac",
+  "displayName": "TacTac",
   "description": "move along definition using alt+arrows",
   "repository": "https://github.com/OlivierArgentieri/PyRide",
   "publisher": "OlivierArgentieri",
@@ -16,41 +16,41 @@
   "contributes": {
     "commands": [
       {
-        "command": "pyride.previousDef",
+        "command": "tactac.previousDef",
         "title": "previous def"
       },
       {
-        "command": "pyride.nextDef",
+        "command": "tactac.nextDef",
         "title": "next def"
       }
     ],
     "menus": {
       "touchBar": [ 
         {
-          "command": "pyride.previousDef",
-          "group": "pyride1",
+          "command": "tactac.previousDef",
+          "group": "tactac1",
           "when": "editorTextFocus"
         },
         {
-          "command": "pyride.nextDef",
-          "group": "pyride2",
+          "command": "tactac.nextDef",
+          "group": "tactac2",
           "when": "editorTextFocus" 
         },
         {
           "command": "workbench.action.terminal.focus",
-          "group": "pyride3",
+          "group": "tactac3",
           "when": "editorTextFocus"
         }
       ]
     },
     "keybindings": [
       {
-        "command": "pyride.nextDef",
+        "command": "tactac.nextDef",
         "key": "alt+down",
         "mac": "shift+cmd+down"
       },
       {
-        "command": "pyride.previousDef",
+        "command": "tactac.previousDef",
         "key": "alt+up",
         "mac": "shift+cmd+up"
       }
