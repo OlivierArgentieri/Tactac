@@ -3,7 +3,7 @@ import * as vscode from 'vscode';
 
 const getRegex = (languageID: string): RegExp | undefined => {
 	const dict_regex: {[key: string]: RegExp} = {
-		'python': /(def \w+[\(|:])/g,
+		'python': /((def|class) \w+[\(|:])/g,
 		'markdown': /(#+\s)/g,
 		'json': /(".*":)/g,
 		'qml': /(\w+\s*\{)/g,
