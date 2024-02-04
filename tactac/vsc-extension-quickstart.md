@@ -1,6 +1,6 @@
-# PyRide
+# Tactac
 
-Simple extension to move along python function definitions using alt+arrows shortcut (like pycharm does).
+Simple VSCode extension to move faster in code using shortcuts.
 
 
 ## Shortcut
@@ -12,4 +12,12 @@ Simple extension to move along python function definitions using alt+arrows shor
 
 
 ## Limitation
-lthough it only works in Python, it uses regex to find the next and previous function definitions, we can make it compatible with any language for which you can translate function definitions using regex.
+
+Based on regex, each languages are based on regex, current supported languages :
+
+|lang|
+|---|
+|Markdown|
+|Python|
+|Json|
+|Qml|
