@@ -2,6 +2,7 @@
 
 Simple VSCode extension to move faster in code using shortcuts.
 
+![windows demo](https://github.com/OlivierArgentieri/Tactac/blob/main/Gif/windows_demo.gif)
 
 ## Shortcut
 
