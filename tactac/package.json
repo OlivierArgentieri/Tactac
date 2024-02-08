@@ -2,9 +2,9 @@
   "name": "tactac",
   "displayName": "TacTac",
   "description": "move along definition using alt+arrows",
-  "repository": "https://github.com/OlivierArgentieri/PyRide",
+  "repository": "https://github.com/OlivierArgentieri/Tactac",
   "publisher": "OlivierArgentieri",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "engines": {  
     "vscode": "^1.83.0"
   },

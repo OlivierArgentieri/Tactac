@@ -22,3 +22,4 @@ Based on regex, each languages are based on regex, current supported languages :
 |Python|
 |Json|
 |Qml|
+|Yaml|

@@ -4,13 +4,13 @@ import * as vscode from 'vscode';
 import { regexNavigation } from './modules/regexnavigation';
 
 export function activate(context: vscode.ExtensionContext) {
-	const modulesToLoad = [
-		regexNavigation
-	]
+    const modulesToLoad = [
+        regexNavigation
+    ]
 
-	modulesToLoad.forEach((module) => {
-		module(context);
-	})
+    modulesToLoad.forEach((module) => {
+        module(context);
+    })
 }
 
 // This method is called when your extension is deactivated
