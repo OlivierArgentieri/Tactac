@@ -4,7 +4,7 @@
   "description": "move along definition using alt+arrows",
   "repository": "https://github.com/OlivierArgentieri/Tactac",
   "publisher": "OlivierArgentieri",
-  "version": "0.5.0",
+  "version": "0.5.2",
   "engines": {  
     "vscode": "^1.83.0"
   },

@@ -40,6 +40,8 @@ const getNextDefinition = (document: vscode.TextDocument, current_position: vsco
             return new vscode.Range(new vscode.Position(line, 0), new vscode.Position(line, 0));
         }
     }
+
+    return new vscode.Range(new vscode.Position(document.lineCount-1, 0), new vscode.Position(document.lineCount-1, 0));
 };
 
 const getPreviousDefinition = (document: vscode.TextDocument, current_position: vscode.Position): vscode.Range | undefined => {
@@ -48,7 +50,7 @@ const getPreviousDefinition = (document: vscode.TextDocument, current_position: 
         vscode.window.showInformationMessage('Sorry, this language is not supported yet.');
         return;
     }
-
+    
     const currentLine = document.lineAt(current_position.line).text;
     for (let line = current_position.line-1; line >= 0; line--) {
         const previousLine = document.lineAt(line).text;
@@ -68,6 +70,7 @@ const getPreviousDefinition = (document: vscode.TextDocument, current_position: 
             return new vscode.Range(new vscode.Position(line, 0), new vscode.Position(line, 0));
         }
     }
+    return new vscode.Range(new vscode.Position(0, 0), new vscode.Position(0, 0));
 };
 
 const revealNewDefinition = (editor: vscode.TextEditor, newDefiniton: vscode.Range | undefined) => {
