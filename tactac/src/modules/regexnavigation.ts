@@ -6,7 +6,8 @@ const languages : Language[] = [
     { regex: /(#+\s)/g, name: 'markdown', indentationBased: false },
     { regex: /([\[|\]|\{|\}])/g, name: 'json', indentationBased: false },
     { regex: /(\w+\s*\{)/g, name: 'qml', indentationBased: false },
-    { regex: /(\w+\s*\:)/g, name: 'yaml', indentationBased: true}
+    { regex: /(\w+\s*\:)/g, name: 'yaml', indentationBased: true},
+    { regex: /(func|import|type)/g, name: 'go', indentationBased: true}
 ];
 
 const getLanguage = (languageID: string): Language | undefined => {
