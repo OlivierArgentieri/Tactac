@@ -1,10 +1,10 @@
 # Tactac
 
-Simple VSCode extension to move faster in code using shortcuts.
+Simple VSCode extension to move faster in the editor using arrows.
 
 ![windows demo](https://github.com/OlivierArgentieri/Tactac/blob/main/Gif/windows_demo.gif)
 
-## Shortcut
+## Default Shortcut
 
 |OS|Shortcut|
 |---|---|
@@ -14,7 +14,7 @@ Simple VSCode extension to move faster in code using shortcuts.
 
 ## Limitation
 
-Based on regex, each languages are based on regex, current supported languages :
+Each rows detection are regex based, current supported files format:
 
 |lang|
 |---|
@@ -23,3 +23,4 @@ Based on regex, each languages are based on regex, current supported languages :
 |Json|
 |Qml|
 |Yaml|
+|HTML|
