@@ -4,9 +4,9 @@
   "description": "move along definition using alt+arrows",
   "repository": "https://github.com/OlivierArgentieri/Tactac",
   "publisher": "OlivierArgentieri",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "engines": {  
-    "vscode": "^1.83.0"
+    "vscode": "^1.110.0"
   },
   "skipLibCheck": true,
   "categories": [
@@ -61,15 +61,15 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.83.0",
-    "@types/mocha": "^10.0.2",
-    "@types/node": "18.x",
-    "@typescript-eslint/eslint-plugin": "^6.7.3",
-    "@typescript-eslint/parser": "^6.7.3",
-    "eslint": "^8.50.0",
-    "glob": "^10.5.0",
-    "mocha": "^10.2.0",
-    "typescript": "^5.2.2",
-    "@vscode/test-electron": "^2.3.4"
+    "@types/vscode": "^1.110.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "25.x",
+    "@typescript-eslint/eslint-plugin": "^8.57.1",
+    "@typescript-eslint/parser": "^8.57.1",
+    "eslint": "^10.0.3",
+    "glob": "^13.0.6",
+    "mocha": "^11.7.5",
+    "typescript": "^5.9.3",
+    "@vscode/test-electron": "^2.5.2"
   }
 }
